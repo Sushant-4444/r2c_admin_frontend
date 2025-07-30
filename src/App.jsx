@@ -7,7 +7,7 @@ import Dashboard from "./Pages/DashBoard"
 import Researchers from "./Pages/Researchers"
 import Research from "./Pages/Research"
 import { AuthProvider } from "./Contexts/AuthContext"
-import ProtectedRoute from "./Components/protectedRoute.jsx"
+import ProtectedRoute from "./Components/ProtectedRoute.jsx"
 
 const theme = createTheme({
   palette: {
