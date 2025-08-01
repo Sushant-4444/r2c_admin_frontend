@@ -37,7 +37,7 @@ const Researchers = () => {
       try {
         const token = await getIdToken()
 
-        const response = await fetch("http://localhost:6000/users/users", {
+        const response = await fetch("http://localhost:8080/users/users", {
           headers: {
             "Content-Type": "application/json",
             "id-token": token,

@@ -72,7 +72,7 @@ const LoginPage = () => {
       console.log("Google sign-in successful. Token:", token);
 
       // Call backend to check admin status
-      const response = await fetch("http://localhost:6000/auth/google-signin", {
+      const response = await fetch("http://localhost:8080/auth/google-signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

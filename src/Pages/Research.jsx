@@ -593,7 +593,7 @@ const Research = () => {
 
   const [sortConfig, setSortConfig] = useState({ key: 'createdDate', direction: 'descending' });
 
-  const API_BASE_URL = "http://localhost:6000";
+  const API_BASE_URL = "http://localhost:8080";
 
   const getIdToken = async () => {
     const user = auth.currentUser;
