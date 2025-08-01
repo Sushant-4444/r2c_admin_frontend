@@ -593,7 +593,7 @@ const Research = () => {
 
   const [sortConfig, setSortConfig] = useState({ key: 'createdDate', direction: 'descending' });
 
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "http://localhost:6000";
 
   const getIdToken = async () => {
     const user = auth.currentUser;
@@ -1080,7 +1080,7 @@ const Research = () => {
                         icon={<Description fontSize="small" />}
                         label={doc.name || `Document ${index + 1}`}
                         component="a"
-                        href={`${API_BASE_URL}${doc.url}`}
+                        href={`r2c.iiitd.edu.in${doc.url}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         clickable

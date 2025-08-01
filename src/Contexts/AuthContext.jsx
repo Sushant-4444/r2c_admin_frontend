@@ -94,7 +94,7 @@ export const AuthProvider = ({ children }) => {
           console.log("Firebase idToken : ", idToken);
 
           // 🔐 Get user role and profile from your backend
-          const res = await fetch("http://localhost:5000/auth/google-signin", {
+          const res = await fetch("http://localhost:6000/auth/google-signin", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
