@@ -37,7 +37,7 @@ const Researchers = () => {
       try {
         const token = await getIdToken()
 
-        const response = await fetch("https://r2c.iiitd.edu.in/admin/api/users/users", {
+        const response = await fetch("https://r2c.iiitd.edu.in/superapi/users/users", {
           headers: {
             "Content-Type": "application/json",
             "id-token": token,
