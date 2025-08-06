@@ -63,7 +63,7 @@ const ProtectedRoute = ({ children }) => {
   }
 
   // Not admin
-  console.log("User role:", user);
+  // console.log("User role:", user);
   if (user.role !== "admin") {
     return <Navigate to="/unauthorized" replace />;
   }

@@ -55,7 +55,7 @@ const Researchers = () => {
             ? new Date(user.createdAt._seconds * 1000).toLocaleDateString() 
             : "N/A",
         }))
-        console.log("Researchers Data:", formatted);
+//         console.log("Researchers Data:", formatted);
         setResearchers(formatted)
       } catch (err) {
         console.error("Failed to fetch users:", err)

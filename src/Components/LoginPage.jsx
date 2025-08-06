@@ -53,7 +53,7 @@ const LoginPage = () => {
 
     try {
       const result = await signInWithPopup(auth, googleProvider)
-      console.log("Google sign-in successful:", result.user)
+      // console.log("Google sign-in successful:", result.user)
       // Navigation will happen automatically via AuthContext's onAuthStateChanged
       navigate("/admin")
     } catch (error) {

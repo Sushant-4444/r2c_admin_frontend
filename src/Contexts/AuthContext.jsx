@@ -91,7 +91,7 @@ export const AuthProvider = ({ children }) => {
       if (firebaseUser) {
         try {
           const idToken = await firebaseUser.getIdToken();
-          console.log("Firebase idToken : ", idToken);
+          // console.log("Firebase idToken : ", idToken);
 
           // 🔐 Get user role and profile from your backend
           const res = await fetch("https://r2c.iiitd.edu.in/superapi/auth/google-signin", {
@@ -106,7 +106,7 @@ export const AuthProvider = ({ children }) => {
           if (!res.ok) throw new Error("Failed to fetch user role from server");
 
           const data = await res.json();
-          console.log("User data from server:", data);
+          // console.log("User data from server:", data);
 
           setUser({
             uid: firebaseUser.uid,

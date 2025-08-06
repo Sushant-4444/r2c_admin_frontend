@@ -69,7 +69,7 @@ const LoginPage = () => {
       // Sign in and get the user
       await signInWithGoogle();
       const token = await getIdToken();
-      console.log("Google sign-in successful. Token:", token);
+      // console.log("Google sign-in successful. Token:", token);
 
       // Call backend to check admin status
       const response = await fetch("https://r2c.iiitd.edu.in/superapi/auth/google-signin", {

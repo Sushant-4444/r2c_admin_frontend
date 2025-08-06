@@ -737,7 +737,7 @@ const Research = () => {
               }
             : r
         ));
-        console.log(`Study ${newApprovalStatus ? 'approved' : 'unapproved'} successfully`);
+        // console.log(`Study ${newApprovalStatus ? 'approved' : 'unapproved'} successfully`);
       } else {
         console.error("Failed to update approval status");
       }
@@ -1080,7 +1080,7 @@ const Research = () => {
                         icon={<Description fontSize="small" />}
                         label={doc.name || `Document ${index + 1}`}
                         component="a"
-                        href={`r2c.iiitd.edu.in${doc.url}`}
+                        href={`r2c.iiitd.edu.in/api/${doc.url}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         clickable
