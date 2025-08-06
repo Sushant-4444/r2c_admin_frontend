@@ -2105,8 +2105,6 @@ const Research = () => {
   ];
 
   return (
-    // The JSX for rendering the component remains the same.
-    // ... (rest of the component)
     <Box>
       <PageHeader title="Research Management" subtitle="View and manage all research projects" />
 
@@ -2288,8 +2286,8 @@ const Research = () => {
                         variant="outlined"
                         size="small"
                       />
-          _id: "6892f9fd24e9251c23cd2fa9",
-                                                </Box>
+                    ))}
+                  </Box>
                 </Box>
               )}
 
