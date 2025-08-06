@@ -1758,7 +1758,7 @@ import {
 import { Visibility, CalendarToday, Person, Description, CheckCircle, Cancel } from "@mui/icons-material"
 
 // Firebase Imports
-import { auth, db } from "../../firebaseConfig"; // Make sure to export 'db' from your config file
+import { auth, db } from "../../firebaseConfig.js"; // Make sure to export 'db' from your config file
 import { collection, getDocs } from "firebase/firestore";
 
 // Component Imports
