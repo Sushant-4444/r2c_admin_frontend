@@ -1080,7 +1080,7 @@ const Research = () => {
                         icon={<Description fontSize="small" />}
                         label={doc.name || `Document ${index + 1}`}
                         component="a"
-                        href={`r2c.iiitd.edu.in/api/${doc.url}`}
+                        href={`https://r2c.iiitd.edu.in/api/${doc.url}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         clickable
